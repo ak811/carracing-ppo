@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+.venv/
+venv/
+
+.vscode/
+.idea/
+.DS_Store
+
+# Outputs
+experiments/*
+!experiments/.gitkeep
+
+# Media / artifacts
+*.zip
+*.mp4
+*.gif
+*.png
+*.csv
+*.jsonl
+*.npz
+
+# TensorBoard
+runs/
