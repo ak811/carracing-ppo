@@ -1,0 +1,14 @@
+base_config: "configs/default.yaml"
+
+grid:
+  ent_coef: [0.005, 0.01, 0.02]
+  clip_range: [0.1, 0.2, 0.3]
+  n_epochs: [5, 10]
+  learning_rate: [3.0e-4, 5.0e-4]
+
+overrides:
+  total_timesteps: 500000
+  eval_freq: 50000
+  n_eval_episodes: 10
+  tensorboard: false
+  verbose: 0
