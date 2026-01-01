@@ -1,0 +1,35 @@
+project_name: "carracing-ppo"
+env_name: "CarRacing-v3"
+
+seed: 42
+device: "auto"
+
+experiments_dir: "experiments"
+run_name: "best_run"
+
+grayscale: true
+resize: 84
+frame_stack: 4
+n_envs: 1
+
+total_timesteps: 3000000
+policy: "CnnPolicy"
+
+learning_rate: 3.0e-4
+gamma: 0.99
+gae_lambda: 0.95
+clip_range: 0.2
+n_steps: 2048
+batch_size: 64
+n_epochs: 10
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+target_kl: null
+
+eval_freq: 25000
+n_eval_episodes: 20
+deterministic_eval: true
+
+verbose: 1
+tensorboard: true
